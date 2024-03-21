@@ -1,0 +1,10 @@
+name: outer-call
+
+on:
+  workflow_dispatch:
+jobs:
+  outer-call:
+    runs-on: ubuntu-latest
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - uses: ./.github/workflows/sync.yml
