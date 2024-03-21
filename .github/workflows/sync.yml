@@ -22,8 +22,9 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
+          # secrets.PAT only working if the calling workflow has secrets: inherit set
           # github_token: ${{ secrets.PAT }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # this is to test the mentioned fallback case
           source_repo_path: AndreasAugustin/template-test
           upstream_branch: main # defaults to main
           pr_labels: chore,📚 template-sync,example
