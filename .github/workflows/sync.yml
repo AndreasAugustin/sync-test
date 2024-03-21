@@ -25,3 +25,4 @@ jobs:
           source_repo_path: AndreasAugustin/template-test
           upstream_branch: main # defaults to main
           pr_labels: chore,📚 template-sync,example
+          is_force_push_pr: true
