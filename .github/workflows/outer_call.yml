@@ -9,4 +9,4 @@ jobs:
       pull-requests: write
     uses: ./.github/workflows/sync.yml
     # without the serets inherit I get an error because I use ${secrets.PAT} within the called workflow
-    secrets: inherit
+    # secrets: inherit
