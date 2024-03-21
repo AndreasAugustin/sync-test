@@ -8,3 +8,4 @@ jobs:
       contents: write
       pull-requests: write
     uses: ./.github/workflows/sync.yml
+    secrets: inherit
