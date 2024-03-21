@@ -4,4 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   outer-call:
+    permissions:
+      contents: write
+      pull-requests: write
     uses: ./.github/workflows/sync.yml
