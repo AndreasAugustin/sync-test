@@ -21,7 +21,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          github_token: ${{ secrets.PAT }}
+          # github_token: ${{ secrets.PAT }}
           source_repo_path: AndreasAugustin/template-test
           upstream_branch: main # defaults to main
           pr_labels: chore,📚 template-sync,example
